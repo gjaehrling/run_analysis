@@ -9,5 +9,8 @@ Target of this project:
 
 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+The upload files with the data are stored in the working directory of the R-file "run_analysis.R".
+
+## Steps to be performed: 
 After loading the initial data, 
 
