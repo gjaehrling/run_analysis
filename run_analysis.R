@@ -10,16 +10,16 @@ library(data.table)
 library(dplyr)
 
 ## step 1: load the data:
-activity_labels <- read.table("../UCI HAR Dataset/activity_labels.txt")[,2]
-subject_train <- read.table("../UCI HAR Dataset/subject_train.txt")
-subject_test <- read.table("../UCI HAR Dataset/subject_test.txt")
-x_train <- read.table("../UCI HAR Dataset/X_train.txt")
-x_test <- read.table("../UCI HAR Dataset/X_test.txt")
-y_train <- read.table("../UCI HAR Dataset/y_train.txt")
-y_test <- read.table("../UCI HAR Dataset/y_test.txt")
+activity_labels <- read.table("activity_labels.txt")[,2]
+subject_train <- read.table("subject_train.txt")
+subject_test <- read.table("subject_test.txt")
+x_train <- read.table("X_train.txt")
+x_test <- read.table("X_test.txt")
+y_train <- read.table("y_train.txt")
+y_test <- read.table("y_test.txt")
 
 ## load the feature information to re-name the columns: 
-features <- read.table("../UCI HAR Dataset/features.txt")
+features <- read.table("features.txt")
 colHeader <- features[,2]
 
 ## step 2: merge the test and the training data set to one dataset and rename columns:
