@@ -21,11 +21,11 @@ in total, 10299 observations ov 68 variables are in the data-set. The variables 
 
 The following variables are extracted in the tidyData set:
 
-tBodyAcc-mean()-X
-tBodyAcc-mean()-Y          
-tBodyAcc-mean()-Z       
-tBodyAcc-std()-X 
-tBodyAcc-std()-Y
+- tBodyAcc-mean()-X
+- tBodyAcc-mean()-Y          
+- tBodyAcc-mean()-Z       
+- tBodyAcc-std()-X 
+- tBodyAcc-std()-Y
 tBodyAcc-std()-Z 
 tGravityAcc-mean()-X 
 tGravityAcc-mean()-Y
