@@ -7,7 +7,7 @@ The training and test data are merged to one dataset using the rbind command. Th
 In step three, the columnames with the mean and standard deviation information are extracted from the second column of the features file using the function sapply and the pattern matching grepl: 
 `sapply(features[,2], function(x) grepl("mean()", x, fixed=T))`
 
-This logical vector is applied to the data set to get only mean and std. deviation columns forming the tidy data set:
+This logical vector is applied to the data set to get only mean and standard deviation columns forming the tidy data set:
 `tidyData <- allData[, (meanColumns | stdColumns)]`
 
 For better readability of the activities, the factor variable with the activity labels is replacing the column activity of the tidy data set:
