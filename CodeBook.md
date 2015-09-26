@@ -16,6 +16,9 @@ For better readability of the activities, the factor variable with the activity 
 In the last step four, the result from the tidy dataset is exracted as en create output file in the current working directory using the following command:
 `write.table(tidyData, "ActivitiesTidyDataSet.txt", row.names=FALSE)`
 
+Step five will group the data frame by the activity and the subject: 
+`tidyData <- group_by(tidyData, activity, subject)`
+
 # Variables: 
 in total, 10299 observations ov 68 variables are in the data-set. The variables for mean and standard deviation are represented as numeric variables. The activity variable is a factor with 6 levels (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) and the subject varialbe is represented as integer. 
 
