@@ -40,6 +40,8 @@ tidyData <- allData[, (meanColumns | stdColumns)]
 
 ## step 4: rename the activities for better naming
 tidyData$activity <- factor(tidyData$activity, labels=activity_labels)
+## step 5: grouping the data frame: 
+tidyData <- group_by(tidyData, activity, subject)
 
 ## get the result from the tidy dataset and create output file in the current working directory:
 write.table(tidyData, "ActivitiesTidyDataSet.txt", row.names=FALSE)
